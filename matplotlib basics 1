@@ -1,0 +1,51 @@
+# Make a line plot, gdp_cap on the x-axis, life_exp on the y-axis
+import matplotlib.pyplot as plt
+plt.plot(gdp_cap,life_exp)
+# Display the plot
+plt.show()
+
+#CHANGING AXIS SCALE AND PLOTTING SCATTER PLOTS
+# Change the line plot below to a scatter plot
+import matplotlib.pyplot as plt
+#plt.plot(gdp_cap, life_exp)
+plt.scatter(gdp_cap,life_exp)
+# Put the x-axis on a logarithmic scale
+plt.xscale('log')
+# Show plot
+plt.show()
+
+#CREATING HISTOGRAMS
+# Create histogram of life_exp data
+import matplotlib.pyplot as plt
+plt.hist(life_exp)
+# Display histogram
+plt.show()
+
+#BINNING HISTOGRAMS AND CLEANING GRAPHS
+# Build histogram with 5 bins
+plt.hist(life_exp,bins=5)
+# Show and clean up plot
+plt.show()
+plt.clf()
+# Build histogram with 20 bins
+plt.hist(life_exp,bins=20)
+# Show and clean up again
+plt.show()
+plt.clf()
+
+#ADDING AXIS LABELS AND HEADERS TO PLOTS
+# Basic scatter plot, log scale
+import matplotlib.pyplot as plt
+plt.scatter(gdp_cap, life_exp)
+plt.xscale('log') 
+plt.show()
+# Strings
+xlab = 'GDP per Capita [in USD]'
+ylab = 'Life Expectancy [in years]'
+title = 'World Development in 2007'
+# Add axis labels
+plt.xlabel(xlab)
+plt.ylabel(ylab)
+plt.title(title)
+plt.show()
+
