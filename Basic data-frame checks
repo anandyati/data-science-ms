@@ -1,0 +1,31 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import norm
+
+#Fetching sample data
+df = pd.read_excel (r'https://url-here.xlsx')
+
+#Number of nulls across columns
+df.isnull().sum()
+
+#Number of not nulls across columns
+df.notnull().sum()
+
+#Number of rows
+print(len(df))
+
+#standard deviation of a column
+(anz_data['amount'].std()
+
+#mean of a column
+anz_data['amount'].mean()
+
+##Plotting normal distribution for a column
+
+#Define plot range on x-axis
+x_axis = np.arange(-(3*standard_deviation), (3*standard_deviation), step size)
+
+#plotting normal distribution 
+plt.plot(x_axis, norm.pdf(x_axis,mean,standard_deviation))
+plt.show()
